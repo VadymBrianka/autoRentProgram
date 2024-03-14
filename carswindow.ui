@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CarsWindow</class>
+ <widget class="QDialog" name="CarsWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>914</width>
+    <height>555</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);
+color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="1" column="0">
+    <widget class="QPushButton" name="addCarButton">
+     <property name="minimumSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>30</width>
+       <height>30</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">background-color: rgb(255, 255, 255);
+border-radius:15px;
+</string>
+     </property>
+     <property name="text">
+      <string/>
+     </property>
+     <property name="icon">
+      <iconset resource="resource.qrc">
+       <normaloff>:/new/icons/Resources/plus.png</normaloff>:/new/icons/Resources/plus.png</iconset>
+     </property>
+    </widget>
+   </item>
+   <item row="2" column="0">
+    <widget class="QTabWidget" name="tabWidgetCars">
+     <property name="styleSheet">
+      <string notr="true">color: rgb(0, 0, 0);</string>
+     </property>
+     <property name="tabPosition">
+      <enum>QTabWidget::West</enum>
+     </property>
+     <property name="tabShape">
+      <enum>QTabWidget::Rounded</enum>
+     </property>
+     <property name="currentIndex">
+      <number>0</number>
+     </property>
+     <property name="movable">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="Available">
+      <attribute name="title">
+       <string>Available</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="2" column="0">
+        <widget class="QTableView" name="tableViewCarsAvailable">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="searchLE">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="placeholderText">
+          <string>Search:</string>
+         </property>
+         <property name="clearButtonEnabled">
+          <bool>true</bool>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QComboBox" name="comboBoxCarsAvailable">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="placeholderText">
+          <string comment="Select field to sort:" extracomment="Select field to sort:">Select field to sort:</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>car_id</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>brand</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>model</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>year</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>vin</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>engineCapacity</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>numberOfSeats</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>trunkVolume</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>price</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>priceOfRenting</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="NotAvailable">
+      <attribute name="title">
+       <string>Not available</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="2" column="0">
+        <widget class="QTableView" name="tableViewCarsNotAvailable">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+color: rgb(0, 0, 0);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLineEdit" name="searchLE2">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="placeholderText">
+          <string>Search:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QComboBox" name="comboBoxCarsNotAvailable">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(255, 255, 255);</string>
+         </property>
+         <property name="placeholderText">
+          <string comment="Select field to sort:" extracomment="Select field to sort:">Select field to sort:</string>
+         </property>
+         <item>
+          <property name="text">
+           <string>car_id</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>brand</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>model</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>year</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>vin</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>engineCapacity</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>numberOfSeats</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>truckVolume</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>price</string>
+          </property>
+         </item>
+         <item>
+          <property name="text">
+           <string>priceOfRenting</string>
+          </property>
+         </item>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources>
+  <include location="resource.qrc"/>
+ </resources>
+ <connections/>
+</ui>

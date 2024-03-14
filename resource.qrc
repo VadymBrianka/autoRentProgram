@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/new/icons">
+        <file>Resources/car.png</file>
+        <file>Resources/address-book.png</file>
+        <file>Resources/cars.png</file>
+        <file>Resources/handshake.png</file>
+        <file>Resources/check.png</file>
+        <file>Resources/exit.png</file>
+        <file>Resources/plus.png</file>
+        <file>Resources/eye.png</file>
+        <file>Resources/user-add.png</file>
+        <file>Resources/free-icon-font-users-3914703.png</file>
+        <file>Resources/QR_.png</file>
+        <file>Resources/free-icon-font-usd-square-7653268.png</file>
+        <file>Resources/free-icon-font-copy-alt-3914630.png</file>
+        <file>Resources/globe.png</file>
+        <file>Resources/user.png</file>
+    </qresource>
+</RCC>
